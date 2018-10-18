@@ -1,7 +1,7 @@
 FROM node:10.11.0-alpine
 WORKDIR /app
 COPY package.json ./
-COPY yarn.lock ./
+#COPY yarn.lock ./
 COPY .graphqlconfig.yml ./
 ENV PRISMA_ENDPOINT "http://prisma:4466"
 ENV APP_SECRET "jwtsecret123"
